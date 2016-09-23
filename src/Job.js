@@ -12,18 +12,7 @@ module.exports = function (grunt) {
   var resultParsers = {
     jasmine: function (result) {
       return result.passed;
-    },
-    qunit: function (result) {
-      return result.passed === result.total && result.total !== undefined;
-    },
-    mocha: function (result) {
-      return result.failures === 0;
-    },
-    'YUI Test': function (result) {
-      return result.passed === result.total && result.total !== undefined;
-    },
-    custom: function (result) {
-      return result.failed === 0;
+    
     }
   };
 
